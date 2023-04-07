@@ -1,0 +1,351 @@
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+<!-- Mirrored from bittrustsecure.com/index.php?a=signup by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 13 Jun 2022 15:13:18 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<title>Bittrustsecure.com</title>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="#"/>
+	<meta name="viewport" content="width=device-width, initial-scale=0.5">
+	<!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<!-- Font-Awesome -->
+	<link rel="stylesheet" type="text/css" href="css/fontawesome-all.css">
+	<!-- Slider -->
+	<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="css/slider.css">
+	<!--Navigation Menu CSS-->
+	<link rel="stylesheet" type="text/css" href="css/navigation.css">
+	<!-- Owl carousel Styles -->
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.theme.default.css">
+	<!--Animate CSS-->
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<!-- Main Styles -->
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+
+
+<!-- Navbar START -->
+<header id="nav-transparent">
+	<nav id="navigation4" class="container navigation">
+		<div class="nav-header">
+			<a class="nav-brand" href="indexbc14.html?a=home">
+				<img src="1640686604079.png" alt="logo" class="main-logo" id="light_logo">
+
+			</a>
+			<div class="nav-toggle"></div>
+		</div>
+		<div class="nav-menus-wrapper">
+			<ul class="nav-menu align-to-right">
+				<li><a href="indexbc14.html?a=home">Home</a></li>
+				<li><a href="indexe47e.html?a=about">About</a></li>
+				<li><a href="index0d07-2.html?a=plan">Plans</a></li>
+				<li><a href="index38cd.html?a=faq">FAQ's</a></li>
+				<li><a href="index15a0.html?a=support">Contact Us</a></li>
+								<li><a href="indexc30b.html?a=login">Login</a></li>
+				<li><a href="indexcca3.html?a=signup">Register</a></li>
+								
+			</ul>
+		</div>
+	</nav>
+</header>
+<!-- Navbar END -->
+
+<!-- Page Title START -->
+<div class="page-title-section" style="background-image: url('../i.ibb.co/S3hLVfy/3.jpg');">
+  <div class="black-overlay-10"></div>
+  <div class="container">
+    <h1>Register Here</h1>
+  </div>
+</div>
+<!-- Page Title END -->
+
+
+
+<!--Let's Talk START-->
+<div class="section-wrapper section-wrapper--gray">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-12 col-lg-8 mb-4">
+        <h3 class="s-subtitle-top textcolor text-center">Let's Talk about Your Customers</h3>
+        <h3 class="s-title-lg text-center">Create A New Account</h3>
+      </div>
+    </div>
+    <!-- Form Start -->
+
+ 
+
+ <script language=javascript>
+ function checkform() {
+  if (document.regform.fullname.value == '') {
+    alert("Please enter your full name!");
+    document.regform.fullname.focus();
+    return false;
+  }
+ 
+  
+  if (document.regform.username.value == '') {
+    alert("Please enter your username!");
+    document.regform.username.focus();
+    return false;
+  }
+  if (!document.regform.username.value.match(/^[A-Za-z0-9_\-]+$/)) {
+    alert("For username you should use English letters and digits only!");
+    document.regform.username.focus();
+    return false;
+  }
+  if (document.regform.password.value == '') {
+    alert("Please enter your password!");
+    document.regform.password.focus();
+    return false;
+  }
+  if (document.regform.password.value != document.regform.password2.value) {
+    alert("Please check your password!");
+    document.regform.password2.focus();
+    return false;
+  }
+ 
+  
+  if (document.regform.email.value == '') {
+    alert("Please enter your e-mail address!");
+    document.regform.email.focus();
+    return false;
+  }
+  if (document.regform.email.value != document.regform.email1.value) {
+    alert("Please retupe your e-mail!");
+    document.regform.email.focus();
+    return false;
+  }
+
+  for (i in document.regform.elements) {
+    f = document.regform.elements[i];
+    if (f.name && f.name.match(/^pay_account/)) {
+      if (f.value == '') continue;
+      var notice = f.getAttribute('data-validate-notice');
+      var invalid = 0;
+      if (f.getAttribute('data-validate') == 'regexp') {
+        var re = new RegExp(f.getAttribute('data-validate-regexp'));
+        if (!f.value.match(re)) {
+          invalid = 1;
+        }
+      } else if (f.getAttribute('data-validate') == 'email') {
+        var re = /^[^\@]+\@[^\@]+\.\w{2,4}$/;
+        if (!f.value.match(re)) {
+          invalid = 1;
+        }
+      }
+      if (invalid) {
+        alert('Invalid account format. Expected '+notice);
+        f.focus();
+        return false;
+      }
+    }
+  }
+
+  if (document.regform.agree.checked == false) {
+    alert("You have to agree with the Terms and Conditions!");
+    return false;
+  }
+
+  return true;
+ }
+
+ function IsNumeric(sText) {
+  var ValidChars = "0123456789";
+  var IsNumber=true;
+  var Char;
+  if (sText == '') return false;
+  for (i = 0; i < sText.length && IsNumber == true; i++) { 
+    Char = sText.charAt(i); 
+    if (ValidChars.indexOf(Char) == -1) {
+      IsNumber = false;
+    }
+  }
+  return IsNumber;
+ }
+ </script>
+ 
+ 
+  
+ 
+ 
+<form method=post onsubmit="return checkform()" name="regform"class="white-form mt-3"><input type="hidden" name="form_id" value="16551330801818"><input type="hidden" name="form_token" value="14f492e555f1a73d95588b575fe9429c">
+<input type=hidden name=a value="signup">
+<input type=hidden name=action value="signup">
+<div class="row">
+        <div class="col-md-6 col-sm-6 col-12">
+          <input type="text" name=fullname value='' placeholder="Name *">
+        </div>
+ 
+ <div class="col-md-6 col-sm-6 col-12">
+          <input type="text" name=username value='' placeholder="Username *">
+        </div>
+  <div class="col-md-6 col-sm-6 col-12">
+          <input type=password name=password value='' placeholder="Password *">
+        </div>
+<div class="col-md-6 col-sm-6 col-12">
+          <input type=password name=password2 value='' placeholder="Confirm Password *">
+        </div>
+        <div class="col-md-6 col-sm-6 col-12">
+          <input type="email" name=email value='' placeholder="E-mail *">
+        </div>
+<div class="col-md-6 col-sm-6 col-12">
+          <input type="email" name=email1 value='' placeholder="Confirm E-mail *">
+        </div>
+  
+                                                                                                                       <div class="col-md-6 col-sm-6 col-12">
+                                            <input type="text" name="pay_account[1000][Wallet address]" value="" placeholder="Bitcoin Wallet address">
+                                        </div>
+                                                                                                                                                               <div class="col-md-6 col-sm-6 col-12">
+                                            <input type="text" name="pay_account[1001][Wallet address]" value="" placeholder="Ethereum Wallet address">
+                                        </div>
+                                                                                                                                                               <div class="col-md-6 col-sm-6 col-12">
+                                            <input type="text" name="pay_account[1002][Wallet address]" value="" placeholder="Dogecoin Wallet address">
+                                        </div>
+                                                                                                                                                               <div class="col-md-6 col-sm-6 col-12">
+                                            <input type="text" name="pay_account[1003][Wallet address]" value="" placeholder="Tron Wallet address">
+                                        </div>
+                                                                                                                                                               <div class="col-md-6 col-sm-6 col-12">
+                                            <input type="text" name="pay_account[1004][Wallet address]" value="" placeholder="Litecoin Wallet address">
+                                        </div>
+                                                                                                                                                               <div class="col-md-6 col-sm-6 col-12">
+                                            <input type="text" name="pay_account[1005][Wallet address]" value="" placeholder="Usdt(TRC20) Wallet address">
+                                        </div>
+                                                                                                                                                               <div class="col-md-6 col-sm-6 col-12">
+                                            <input type="text" name="pay_account[1006][Wallet address]" value="" placeholder="Bitcoin Cash Wallet address">
+                                        </div>
+                                                                                                                                                               <div class="col-md-6 col-sm-6 col-12">
+                                            <input type="text" name="pay_account[1007][account]" value="" placeholder="perfect money account">
+                                        </div>
+                                                                                
+
+
+<div class="col-md-6 col-sm-6 col-12">
+          <input type="text" value="()" disabled>
+        </div>
+
+        <div class="col-md-12 text-center">
+        <input type=checkbox name=agree value=1  > I agree with <a href="indexa972.html?a=rules">Terms and conditions</a><br>
+          <button type="submit" class="button-primary button-xl hvr-sweep-to-right mt-3">Register</button>
+        </div>
+      </div>
+    </form>
+
+</div>
+</div>
+<!-- Footer -->
+  <footer id="footer" class="footer" data-bg-img=" https://i.ibb.co/QcHkhC0/2-3.jpg " data-bg-color="#152029">
+    <div class="container pt-70 pb-40">
+      <div class="row border-bottom">
+        <div class="col-sm-6 col-md-3">
+          <div class="widget dark">
+            <img class="mt-5 mb-20" alt="" src="1640686604079.png">
+           <p>Bit Trust Secure</p>
+            <ul class="list-inline mt-5">
+              <li class="m-0 pl-10 pr-10"> <i class="fa fa-phone text-theme-colored2 mr-5"></i> <a class="text-gray" href="#">VIP ONLY</a> </li>
+              <li class="m-0 pl-10 pr-10"> <i class="fa fa-envelope-o text-theme-colored2 mr-5"></i> <a class="text-gray" href="#"><span class="__cf_email__" data-cfemail="c6b5b3b6b6a9b4b286a0afbea3a2a7bfe8a5a9ab">helpdesk@Bit Trust Secure.com</span></a> </li>
+              <li class="m-0 pl-10 pr-10"> <i class="fa fa-globe text-theme-colored2 mr-5"></i> <a class="text-gray" href="#">www.Bit Trust Secure.com</a> </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="widget dark">
+            <h4 class="widget-title">Useful Links</h4>
+            <ul class="list angle-double-right list-border">
+              <li><a href="index56ca.html?a=news">Latest News</a></li>
+              <li><a href="indexa972.html?a=rules">Terms Of Service</a></li>
+              <li><a href="index15a0.html?a=support">Contact To Us</a></li>
+              </ul>
+          </div>
+        </div>
+         <div class="col-sm-6 col-md-3">
+          <div class="widget dark">
+            <h4 class="widget-title"> </h4>
+            <ul class="list angle-double-right list-border">
+                           <li><a href="index56ca.html?a=news#3">   </a></li>
+                            <li><a href="index56ca.html?a=news#2">   </a></li>
+              			  </ul>
+          </div>
+        </div>
+       <div class="col-sm-6 col-md-3">
+          <div class="widget dark">
+            <h4 class="widget-title">  </h4>
+            <ul class="list angle-double-right list-border">
+              <img src=" " alt="">
+              </ul>
+          </div>
+    
+        </div>
+      </div>
+      
+    </div>
+    <div class="footer-bottom bg-theme-colored-transparent-5">
+      <div class="container pt-20 pb-20">
+        <div class="row">
+         <div class="col-md-6">
+            <div class="widget no-border m-0">
+              <ul class="list-inline sm-text-center mt-5 font-12">
+                <li>
+                  <a href="index38cd.html?a=faq">FAQ</a>
+                </li>
+                <li>|</li>
+                <li>
+                  <a href="indexa972.html?a=rules">Terms and Survice</a>
+                </li>
+                <li>|</li>
+                <li>
+                  <a href="index15a0.html?a=support">Support</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 text-right">
+            <p class="font-11 text-black-777 m-0">Copyright ©2021 Bittrustsecure.com All Rights Reserved</p>
+          </div>
+
+<!-- Footer Scripts -->
+<!-- JS | Custom script for all pages -->
+<script src="netema/js/custom.js"></script>
+
+<!-- SLIDER REVOLUTION 5.0 EXTENSIONS  
+      (Load Extensions only on Local File Systems ! 
+       The following part can be removed on Server for On Demand Loading) -->
+<script type="text/javascript" src="netema/js/revolution-slider/js/extensions/revolution.extension.actions.min.js"></script>
+<script type="text/javascript" src="netema/js/revolution-slider/js/extensions/revolution.extension.carousel.min.js"></script>
+<script type="text/javascript" src="netema/js/revolution-slider/js/extensions/revolution.extension.kenburn.min.js"></script>
+<script type="text/javascript" src="netema/js/revolution-slider/js/extensions/revolution.extension.layeranimation.min.155.dela"></script>
+<script type="text/javascript" src="netema/js/revolution-slider/js/extensions/revolution.extension.migration.min.js"></script>
+<script type="text/javascript" src="netema/js/revolution-slider/js/extensions/revolution.extension.navigation.min.js"></script>
+<script type="text/javascript" src="netema/js/revolution-slider/js/extensions/revolution.extension.parallax.min.js"></script>
+<script type="text/javascript" src="netema/js/revolution-slider/js/extensions/revolution.extension.slideanims.min.js"></script>
+<script type="text/javascript" src="netema/js/revolution-slider/js/extensions/revolution.extension.video.min.js"></script>
+
+
+
+</body>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/622ded8fa34c2456412ad1d5/1fu1mfugc';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+
+
+<!-- Mirrored from bittrustsecure.com/index.php?a=signup by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 13 Jun 2022 15:13:18 GMT -->
+</html> 
+
